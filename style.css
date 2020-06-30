@@ -1,0 +1,327 @@
+* {
+    font-family: 'Segoe UI';
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+
+#bild11 {
+    background-image: url('bilder/alle.tshirts.jpg');
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 50px;
+}
+
+#logolink {
+    padding: 3px;
+    transform: scale(1.0);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+#logolink:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    color: #707070;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+header nav a:hover {
+    border-bottom: 3px solid #707070;
+}
+
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.border {
+    border: 1px solid;
+    display: grid;
+}
+
+
+h1 {
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+/**********************************Tshirts (Zeilen)******************************************************/
+
+
+.zeile {
+    background-color: rgb(196, 190, 206);
+    padding: 70px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.zeile2 {
+    background-color: rgb(247, 224, 210);
+    padding: 70px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block {
+    width: 370px;
+    height: 595px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+
+.block img {
+    width: 80%;
+    margin-left: 20%;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.block img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+.titelarbeit {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.block p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+
+
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: flex
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*----------------------------1. Ergänzung---------------------------*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    border: #bbbbbb;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    margin: auto;
+
+}
+
+/*----------------------------1. Ergänzung---------------------------*/
+
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: #717171;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 0px 0px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+}
+
+
+
+
+/*----------------------------Footer---------------------------*/
+
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    padding: 18px 0;
+
+    /*----------------------------Footer---------------------------*/
+}
+
+
+
+
+
+/*----------------------------2. Ergänzung---------------------------*/
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(133, 133, 133, 0.377);
+}
+
+/*----------------------------2. Ergänzung---------------------------*/
+
+
+
+
+
+/* Caption text */
+.text {
+    color: #717171;
+    font-size: 15px;
+    padding: -4px 2px;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+    color: #717171;
+    font-size: 12px;
+    padding: 2px 2px;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 1px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 60s;
+    animation-name: fade;
+    animation-duration: 60s;
+
+    /*                Ergänzung- Zeit Verlängert               */
+}
+
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .8
+    }
+
+    to {
+        opacity: 10
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .8
+    }
+
+    to {
+        opacity: 10
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
